@@ -28,6 +28,18 @@ Contains anonymized customer information used for analysis:
 - customer_id
 - first_name
 - last_name
+  
+## Example Insights
+
+From the analysis we can identify:
+
+- Total number of orders
+- Average order value
+- Distribution of order status (delivered vs cancelled)
+- Payment behavior of customers
+- Daily order trends
+
+These insights help understand operational performance and customer behavior in the delivery platform.
 
 ## Key Questions
 - How many orders were placed?
