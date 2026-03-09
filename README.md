@@ -60,3 +60,5 @@ These insights help understand operational performance and customer behavior in 
 - `qudyan_sql_queries.sql`
 - `qudyan_analysis.py`
 - `insights.md`
+## Orders over time
+![Orders over time](Orders_over_time_chart.png)
