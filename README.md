@@ -8,8 +8,8 @@ The goal of this project is to explore order trends, revenue patterns, and deliv
 ## Dataset Overview
 - Orders dataset: 1,152 rows
 - Customers dataset: 1,968 rows (anonymized for portfolio use)
-- ## Dataset
 
+## Dataset
 The project uses two datasets derived from Qudyan Delivery operations.
 
 ### Orders Dataset
