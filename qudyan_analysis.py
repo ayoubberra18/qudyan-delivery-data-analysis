@@ -1,8 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load dataset
-df = pd.read_csv("qudyan_orders_portfolio.csv")
+# Load portfolio orders dataset
+df = pd.read_csv("Qudyan _orders_portfolio.csv")
 
 print("First 5 rows:")
 print(df.head())
@@ -44,15 +44,10 @@ plt.ylabel("Number of Orders")
 plt.tight_layout()
 plt.show()
 
-import pandas as pd
-import matplotlib.pyplot as plt
-
-df = pd.read_csv("qudyan_orders_portfolio.csv")
-
 # Orders by status
 status_counts = df["order_status"].value_counts()
 
-plt.figure(figsize=(6,4))
+plt.figure(figsize=(6, 4))
 status_counts.plot(kind="bar")
 plt.title("Order Status Distribution")
 plt.xlabel("Status")
@@ -63,7 +58,7 @@ plt.savefig("order_status_chart.png")
 # Payment status
 payment_counts = df["payment_status"].value_counts()
 
-plt.figure(figsize=(6,4))
+plt.figure(figsize=(6, 4))
 payment_counts.plot(kind="bar")
 plt.title("Payment Status Distribution")
 plt.xlabel("Payment Status")
@@ -75,10 +70,10 @@ plt.savefig("payment_status_chart.png")
 df["created_at"] = pd.to_datetime(df["created_at"])
 daily_orders = df.groupby(df["created_at"].dt.date)["order_id"].count()
 
-plt.figure(figsize=(8,4))
+plt.figure(figsize=(8, 4))
 daily_orders.plot()
 plt.title("Orders Over Time")
 plt.xlabel("Date")
 plt.ylabel("Orders")
 plt.tight_layout()
-plt.savefig("orders_over_time_chart.png")
+plt.savefig("Orders_over_time_chart.png")
